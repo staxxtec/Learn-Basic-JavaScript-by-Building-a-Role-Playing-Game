@@ -63,3 +63,9 @@ function goCave() {
     
   }
   
+  function  fightSlime() {
+
+  }
+  function fightBeast() {
+    
+  }
