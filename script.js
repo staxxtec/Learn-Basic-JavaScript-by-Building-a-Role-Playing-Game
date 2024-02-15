@@ -91,7 +91,7 @@ function goCave() {
       }
   }
   function buyWeapon () {
-    
+    if (gold >= 30);
   }
   
   function  fightSlime() {
