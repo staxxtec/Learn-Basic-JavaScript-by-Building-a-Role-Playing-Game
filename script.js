@@ -95,8 +95,7 @@ function goCave() {
       gold -= 30;
       goldText.innerText = gold;
       currentWeapon++;
-    }
-    else {
+      let newWeapon = weapons;
       text.innerText = "You now have a new weapon.";
     }
   }
