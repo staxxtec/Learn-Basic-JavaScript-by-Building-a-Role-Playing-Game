@@ -90,10 +90,15 @@ function goCave() {
         text.innerText = "You do not have enough gold to buy health.";
       }
   }
-  function buyWeapon () {
-    if (gold >= 30);
-    gold -= 30;
-    currentWeapon ++ ;
+  function buyWeapon() {
+    if (gold >= 30) {
+      gold -= 30;
+      goldText.innerText = gold;
+      currentWeapon++;
+    }
+    else {
+      text.innerText = "You now have a new weapon.";
+    }
   }
   
   function  fightSlime() {
