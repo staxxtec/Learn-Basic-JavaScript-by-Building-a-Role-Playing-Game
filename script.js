@@ -97,6 +97,7 @@ function goCave() {
       currentWeapon++;
       let newWeapon = weapons[currentWeapon].name;
       text.innerText = "You now have a " +  newWeapon + ".";
+      inventory.push(newWeapon);
     }
   }
   
