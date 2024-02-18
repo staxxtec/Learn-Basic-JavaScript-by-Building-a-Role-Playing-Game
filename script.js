@@ -105,7 +105,7 @@ function goCave() {
           } 
       
     }
-  }
+  
   
   function  fightSlime() {
 
