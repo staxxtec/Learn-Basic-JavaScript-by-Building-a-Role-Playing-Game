@@ -91,6 +91,7 @@ function goCave() {
       }
   }
   function buyWeapon() {
+    if (currentWeapon < 3) {
     if (gold >= 30) {
       gold -= 30;
       goldText.innerText = gold;
