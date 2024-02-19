@@ -114,6 +114,7 @@ function goCave() {
       gold += 15;
       goldText.innerText = gold;
       let currentWeapon = inventory.shift();
+      text.innerText = "You sold a " + currentWeapon + ".";
     }
   }
   
