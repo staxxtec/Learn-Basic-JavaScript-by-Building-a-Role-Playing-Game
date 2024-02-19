@@ -111,7 +111,9 @@ function goCave() {
   }
   function sellWeapon () {
     if (inventory.length > 1);{
-      goldText.innerText = gold += 15;
+      gold += 15;
+      goldText.innerText = gold;
+      let currentWeapon
     }
   }
   
