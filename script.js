@@ -109,6 +109,9 @@ function goCave() {
   button2.onclick = sellWeapon; 
     }
   }
+  function sellWeapon () {
+  
+  }
   
   function  fightSlime() {
 
