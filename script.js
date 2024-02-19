@@ -133,3 +133,9 @@ function goCave() {
   function fightBeast() {
     
   }
+  function fightDragon() {
+    
+  }
+  function goFight() {
+
+  }
