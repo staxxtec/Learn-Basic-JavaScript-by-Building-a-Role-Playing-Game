@@ -110,7 +110,9 @@ function goCave() {
     }
   }
   function sellWeapon () {
+    if (inventory.length > 1);{
   
+    }
   }
   
   function  fightSlime() {
