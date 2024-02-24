@@ -187,5 +187,5 @@ function goCave() {
 
   }
   function lose () {
-  
+    update(locations[5]);
   }
