@@ -176,6 +176,7 @@ function goCave() {
     xp += (monsters[fighting].level + xp);
     goldText.innerText = gold;
   xpText.innerText = xp;
+  update (locations[4]);
 
   }
   function lose () {
