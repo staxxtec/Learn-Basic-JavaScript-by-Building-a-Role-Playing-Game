@@ -165,9 +165,15 @@ function goCave() {
     lose ();
     }
     else if (monsterHealth <= 0) {
-      defeatMonster()
+      defeatMonster();
     }
   }
   function dodge() {
     
+  }
+  function defeatMonster () {
+
+  }
+  function lose () {
+  
   }
