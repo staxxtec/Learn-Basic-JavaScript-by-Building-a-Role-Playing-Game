@@ -167,20 +167,24 @@ function goCave() {
   monsterHealthText.innerText = monsterHealth;
 
   }
-  function  attack() {
-    text.innerText = "The "+ monsters[fighting].name + " attacks."
+  function attack() {
+    text.innerText = "The " + monsters[fighting].name + " attacks.";
     text.innerText += " You attack it with your " + weapons[currentWeapon].name + ".";
     health -= monsters[fighting].level;
-    monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random () * xp) + 1;
+    monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
     healthText.innerText = health;
-  monsterHealthText.innerText = monsterHealth;
-  if (health <= 0 ) {
-    lose ();
-    }
-    else if (monsterHealth <= 0) {
+    monsterHealthText.innerText = monsterHealth;
+    if (health <= 0) {
+      lose();
+   } else if (monsterHealth <= 0) {
+    if (fighting === 2) {
+      winGame();
+    } else  {
       defeatMonster();
+      }
     }
   }
+  
   function dodge() {
     text.innerText = "You dodge the attack from the " + monsters[fighting].name;
   }
