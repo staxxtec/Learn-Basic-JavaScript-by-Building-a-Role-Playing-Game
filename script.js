@@ -196,7 +196,10 @@ function goCave() {
       defeatMonster();
       }
     }
+    {
+    if (Math.random() <= .1);
   }
+  
   function getMonsterAttackValue (level) {
     const hit = (level * 5) - (Math.floor(Math.random() * xp));
     console.log(hit);
