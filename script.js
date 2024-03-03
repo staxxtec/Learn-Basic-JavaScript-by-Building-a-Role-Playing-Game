@@ -255,7 +255,7 @@ function goCave() {
     pick(8);
   }
   function pick(guess) {
-    for (let x = 1; x < 5; x++) {
+    for (let i = 0; x < 5; x++) {
 
     }
     
