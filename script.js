@@ -23,7 +23,7 @@ const weapons = [
        {name: "sword", power: 10},
 ];
 const monsters = [
-  { name: "slime", level: 2, health:15 },
+  { name: "slime", level: 2, health: 15 },
   { name: "fanged beast", level: 8, health: 60 },
   { name: "dragon", level: 20, health: 300  }, 
 ];
@@ -81,9 +81,10 @@ const locations = [
 button1.onclick = goStore;  
 button2.onclick = goCave;  
 button3.onclick = fightDragon;  
+
 function update(location) {
   monsterStats.style.display = "none";
-    button1.innerText = location["button text"][0];
+  button1.innerText = location["button text"][0];
   button2.innerText = location["button text"][1];
   button3.innerText = location["button text"][2];
   button1.onclick = location["button functions"][0];
