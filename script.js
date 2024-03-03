@@ -264,4 +264,5 @@ function goCave() {
     numbers.push(Math.floor(Math.random() * 11));
     }
     text.innerText = "You picked " + guess +  ". Here are the random numbers:\n";
+    text.innerText += numbers[i] + "\n"
   }
