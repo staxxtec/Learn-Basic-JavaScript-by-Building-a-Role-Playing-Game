@@ -255,5 +255,5 @@ function goCave() {
     pick(8);
   }
   function pick(guess) {
- 
+    const numbers = [];
   }
