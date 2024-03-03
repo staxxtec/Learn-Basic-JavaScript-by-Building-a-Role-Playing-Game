@@ -257,7 +257,8 @@ function goCave() {
   function pick(guess) {
     for (let i = 0; i < 10; i++) {
       if(numbers.includes(guess));{
-        
+        text.innerText += "Right! You win 20 gold!";
+goldText.innerText = gold += 20;
       }
     }
     
