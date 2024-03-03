@@ -17,10 +17,10 @@ const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealthText"); 
 const weapons = [
-    {name: "stick", power: 5},
-     {name: "dagger", power: 30},
-       {name: "claw hammer", power: 50},
-       {name: "sword", power: 10},
+    {name: 'stick', power: 5},
+     {name: 'dagger', power: 30},
+       {name: 'claw hammer', power: 50},
+       {name: 'sword', power: 10},
 ];
 const monsters = [
   { name: "slime", level: 2, health: 15 },
