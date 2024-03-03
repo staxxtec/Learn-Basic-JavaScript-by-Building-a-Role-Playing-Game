@@ -256,7 +256,9 @@ function goCave() {
   }
   function pick(guess) {
     for (let i = 0; i < 10; i++) {
-
+      if(numbers.includes(guess));{
+        
+      }
     }
     
     const numbers = [];
