@@ -103,9 +103,7 @@ function goStore() {
 function goCave() {
     update(locations[2]);
   }
-  function fightDragon() {   
-    console.log("Fighting dragon.");
-  }
+  
   function buyHealth () {
     if (gold >=10) {
         gold -= 10;
@@ -180,7 +178,6 @@ function goCave() {
         text.innerText += " You miss.";
       }
     }
-    monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
     healthText.innerText = health;
     monsterHealthText.innerText = monsterHealth;
     if (health <= 0) {
@@ -192,9 +189,9 @@ function goCave() {
       defeatMonster();
       }
     }
-    currentWeapon --;
     if (Math.random() <= .1 && inventory.length !== 1);  
-    text.innerText += " Your " + inventory.pop() +  " breaks."; {
+    text.innerText += " Your " + inventory.pop() +  " breaks."; 
+    currentWeapon--;{
   }
   
   function getMonsterAttackValue (level) {
@@ -211,10 +208,10 @@ function goCave() {
   }
   function defeatMonster () {
     gold += Math.floor(monsters[fighting].level * 6.7);
-    xp += (monsters[fighting].level + xp);
+    xp += monsters[fighting].level;
     goldText.innerText = gold;
-  xpText.innerText = xp;
-  update (locations[4]);
+    xpText.innerText = xp;
+    update (locations[4]);
 
   }
   function lose () {
@@ -224,9 +221,9 @@ function goCave() {
     update(locations[6]);
   }
   function restart () {
-    xp = 0
-    health = 100
-    gold = 50
+  xp = 0
+  health = 100
+  gold = 50
   currentWeapon= 0 
   inventory = ["stick"]
   goldText.innerText = gold;
