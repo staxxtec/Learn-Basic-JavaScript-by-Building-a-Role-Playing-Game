@@ -273,4 +273,4 @@ function goCave() {
       healthText.innerText = health;
   
     }
-  }
+  } 
