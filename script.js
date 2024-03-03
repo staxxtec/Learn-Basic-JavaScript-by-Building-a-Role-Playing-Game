@@ -197,7 +197,7 @@ function goCave() {
       }
     }
     currentWeapon --;
-    if (Math.random() <= .1 && inventory.length !== 1);
+    if (Math.random() <= .1 && inventory.length !== 1);  
     text.innerText += " Your " + inventory.pop() +  " breaks."; {
   }
   
