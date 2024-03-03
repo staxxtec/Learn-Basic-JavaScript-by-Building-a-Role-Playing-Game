@@ -38,7 +38,7 @@ const locations = [
       "button text": ["Buy 10 health (10 gold)", "Buy weapon (30 gold)", "Go to town square"],
       "button functions": [buyHealth, buyWeapon, goTown],
       text: "You enter the store."},
-      
+
       {  name: "cave",
     "button text": ["Fight slime", "Fight fanged beast", "Go to town square"],
     "button functions": [fightSlime, fightBeast, goTown],
@@ -120,8 +120,8 @@ function goCave() {
     if (currentWeapon < weapons.length -1) {
     if (gold >= 30) {
       gold -= 30;
-      goldText.innerText = gold;
       currentWeapon++;
+      goldText.innerText = gold;
       let newWeapon = weapons[currentWeapon].name;
       text.innerText = "You now have a " +  newWeapon + ".";
       inventory.push(newWeapon);
